@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script context="module">
+	import ThePostsLists from '$lib/ThePostsLists.svelte';
+	export async function load({ fetch }) {
+		const res = await fetch('https://hoot.goldandblack.xyz/api/unstable/posts');
+		const data = await res.json();
+		return { props: { posts: data } };
+	}
+</script>
+
+<script>
+	export let posts;
+</script>
+
+<ThePostsLists {posts} />
