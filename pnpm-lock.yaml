@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@sveltejs/adapter-netlify': ^1.0.0-next.27
   '@sveltejs/adapter-static': ^1.0.0-next.16
   '@sveltejs/kit': next
   '@tailwindcss/forms': ^0.3.3
@@ -19,8 +20,9 @@ specifiers:
   tailwindcss: ^2.2.4
 
 devDependencies:
+  '@sveltejs/adapter-netlify': 1.0.0-next.27
   '@sveltejs/adapter-static': 1.0.0-next.16
-  '@sveltejs/kit': 1.0.0-next.142_svelte@3.42.1
+  '@sveltejs/kit': 1.0.0-next.146_svelte@3.42.1
   '@tailwindcss/forms': 0.3.3_tailwindcss@2.2.7
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.7
   autoprefixer: 10.3.1_postcss@8.3.6
@@ -90,6 +92,10 @@ packages:
     resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
     dev: true
 
+  /@iarna/toml/2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -119,12 +125,19 @@ packages:
       picomatch: 2.3.0
     dev: true
 
+  /@sveltejs/adapter-netlify/1.0.0-next.27:
+    resolution: {integrity: sha512-t3kU2tJdCWmHwTBf+BRzzvYaM8ApxL+DEKtU1dUMI3bA8AgkpwkSHYiqZ75U2C+whi4mde+z15PeUFaUWzlKXA==}
+    dependencies:
+      '@iarna/toml': 2.2.5
+      esbuild: 0.12.17
+    dev: true
+
   /@sveltejs/adapter-static/1.0.0-next.16:
     resolution: {integrity: sha512-xGFcg+GHF0BL1fyWx2vCzlYj4S4R+Od9cF00soo1TVp/scGOi1G9grSYYW4x5H+iDn1sscoJ65OGBGWIcOgrXg==}
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.142_svelte@3.42.1:
-    resolution: {integrity: sha512-MxoQz/kxlYOXVHETlxh8+wIvfZ4N2EScDqyuaWwFHqWg6fj6FHADJfZ7JCniqvAe8ME2jA9Om/gVR8e1oY04+w==}
+  /@sveltejs/kit/1.0.0-next.146_svelte@3.42.1:
+    resolution: {integrity: sha512-MSatcaCRfjl88Prd5mW4pNOJ3Gsr525+Vjr24MoKtyTt6PZQmTfQsDVwyP93exn/6w2xl9uMCW6cFpDVBu7jSg==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
