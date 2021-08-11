@@ -1,4 +1,5 @@
 <script context="module">
+	export const hydrate = false;
 	export const load = async ({ page, fetch }) => {
 		const res = await fetch(`https://hoot.goldandblack.xyz/api/unstable/posts/${page.params.id}`);
 		const data = await res.json();

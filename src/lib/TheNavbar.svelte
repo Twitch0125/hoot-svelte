@@ -3,7 +3,7 @@
 		<a
 			href="/"
 			class="p-2 mb-2 text-2xl font-bold tracking-wide text-white transition-colors duration-150 ease-in-out rounded sm:mb-0 hover:bg-white hover:text-teal-900"
-			>HOOT</a
+			sveltekit:prefetch>HOOT</a
 		>
 		<div class="mx-auto">
 			<label for="search" class="sr-only">Search Hoot</label>
