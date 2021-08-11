@@ -11,9 +11,13 @@
 				<div class="text-gray-600 text-sm">
 					{post.community.name}@{post.community.host}
 				</div>
-				<div class="text-base text-gray-900 font-medium">
+				<a
+					href={`/posts/${post.id}`}
+					class="text-base text-teal-900 hover:text-teal-700 font-medium"
+					sveltekit:prefetch
+				>
 					{post.title}
-				</div>
+				</a>
 			</div>
 			<div class="flex flex-col gap-1">
 				<div class="text-gray-600 text-sm">
