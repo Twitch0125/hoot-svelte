@@ -1,5 +1,5 @@
 import preprocess from 'svelte-preprocess';
-import netlifyAdapter from '@sveltejs/adapter-netlify';
+import netlifyAdapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
